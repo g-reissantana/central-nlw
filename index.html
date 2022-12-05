@@ -1,287 +1,347 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-  <head>
-    <!-- PAGE INFO -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OriginSix</title>
 
-    <!-- Icones -->
-    <link rel="stylesheet" href="assets/fonts/style.css" />
+<head>
+  <!-- PAGE INFO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="imagem/png" href="./assets/icons/favicon_central.png" />
+  <meta name="description"
+    content="Quer aumentar o faturamento da sua empresa? Fachadas,banners e muito mais para a identidade visual da sua marca. Clique e ganhe um orçamento gratuitamente!">
+  <title>Central Comunicação</title>
 
-    <!-- Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+  <!-- Icones -->
+  <link rel="stylesheet" href="assets/fonts/style.css" />
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header id="header">
-      <nav class="container">
-        <a class="logo" href="#">beauty<span>salon</span>.</a>
-        <!-- menu -->
-        <div class="menu">
-          <ul class="grid">
-            <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#about">Sobre</a></li>
-            <li><a class="title" href="#services">Serviços</a></li>
-            <li><a class="title" href="#testimonials">Depoimentos</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
-          </ul>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- TAILWINDCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            primary: ['inter'],
+            secondary: ['poppins']
+          },
+          fontSize: {
+            th: '0.422rem',
+            lt: '0.563rem',
+            sm: '0.75rem',
+            base: '1rem',
+            md: '1.333rem',
+            lg: '1.777rem',
+            xl: '2.369rem',
+            xl2: '2.829rem',
+            xl3: '3.157rem',
+            xl4: '4.209rem',
+          },
+          keyframes: {
+            topForBottom: {
+              '0%': {
+                transform: ''
+              }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header id="header">
+    <nav class="container_style">
+      <a class="logo" href="#">
+        <img src="./assets/icons/logo-white.png" alt="">
+      </a>
+      <!-- menu -->
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#home">Início</a></li>
+          <li><a class="title" href="#about">Sobre</a></li>
+          <li><a class="title" href="#services">Serviços</a></li>
+          <li><a class="title" href="#testimonials">Depoimentos</a></li>
+          <li><a class="title" href="./galery.html">Galeria</a></li>
+          <li><a class="title" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <!-- /menu -->
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="section" id="home">
+      <div class="container_style grid">
+        <div class="image">
+          <img src="./assets/fotos/central_outdoor.webp"
+            alt="Outdoor grande com a logomarca da Central Comunicação e refletores apontando para o centro do outdoor." />
         </div>
-        <!-- /menu -->
-        <div class="toggle icon-menu"></div>
-        <div class="toggle icon-close"></div>
-      </nav>
-    </header>
+        <div class="text">
+          <div class="flex flex-col gap-4">
+            <h1 class="title">
+              Central<br />Comunicação
+            </h1>
 
-    <main>
-      <!-- HOME -->
-      <section class="section" id="home">
-        <div class="container grid">
-          <div class="image">
-            <img
-              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-              alt="Mulher sorrindo penteando outra mulher"
-            />
-          </div>
-          <div class="text">
-            <h2 class="title">Saúde natural para os seus cabelos</h2>
-            <p>
-              Um salão exclusivo em São Paulo, especializado em tratamentos
-              naturais.
-            </p>
-            <a class="button" href="#">Agendar um horário</a>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-1"></div>
-
-      <!-- ABOUT -->
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image">
-            <img
-              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-              alt="3 mulheres sorrindo"
-            />
-          </div>
-          <div class="text">
-            <h2 class="title">Sobre nós</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Necessitatibus deleniti perferendis vel molestiae soluta, quaerat
-              beatae dicta ducimus praesentium architecto harum dolorum
-              distinctio illo earum assumenda itaque. Omnis, quam repellat.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              illum ratione impedit quae eum quis adipisci asperiores, est
-              doloribus distinctio excepturi minima eius dolore! Perferendis
-              laborum illo aspernatur repellendus ipsum.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-              exercitationem, illum sapiente quasi hic iusto odio maiores esse
-              quaerat quis necessitatibus at odit, dolores dicta, officia ab
-              quos. Provident, quae.
+            <p class="text-base font-normal 2xl:text-md">
+              Comunicação visual e mídia exterior<br />dando visibilidade para o seu negócio
             </p>
           </div>
-        </div>
-      </section>
+          <form class="w-full flex flex-col gap-6" action="">
+            <input class="w-full h-12 bg-slate-300 text-[14px] rounded-lg px-4 py-3 outline-none" type="email"
+              placeholder="Seu email para contato">
 
-      <div class="divider-2"></div>
-
-      <!-- SERVICES -->
-      <section class="section" id="services">
-        <div class="container grid">
-          <header>
-            <h2 class="title">Serviços</h2>
-            <p class="subtitle">
-              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
-              conquistou clientes de inúmeros países com seus tratamentos
-              exclusivos e totalmente naturais
-            </p>
-          </header>
-          <div class="cards grid">
-            <div class="card">
-              <i class="icon-woman-hair"></i>
-              <h3 class="title">Terapia capilar</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
-              </p>
-            </div>
-            <div class="card">
-              <i class="icon-trim"></i>
-              <h3 class="title">Cortes</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
-              </p>
-            </div>
-            <div class="card">
-              <i class="icon-cosmetic"></i>
-              <h3 class="title">Tratamentos</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-1"></div>
-
-      <!-- TESTIMONIALS -->
-      <section class="section" id="testimonials">
-        <div class="container">
-          <header>
-            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
-          </header>
-          <div class="testimonials swiper-container">
-            <div class="swiper-wrapper">
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                    ipsam neque
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/fotos/10.jpeg"
-                      alt="Foto de Wanessa Souza"
-                    />
-                    Wanessa Souza
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                    ipsam neque
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/fotos/56.jpeg"
-                      alt="Foto de Franciele Venega"
-                    />
-                    Franciele Venega
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                    ipsam neque
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/fotos/26.jpeg"
-                      alt="Fotos de Valeska Fabris"
-                    />
-                    Valeska Fabris
-                  </cite>
-                </blockquote>
+            <div class="flex flex-col gap-4 lg:gap-2 2xl:gap-x-4 sm:flex-row">
+              <button type="submit" class="button !bg-[#43CB9C]">
+                <a
+                  href="mailto:contato@centralcomunicacao.com.br?subject=Orçamento Gratuito&body=Olá, gostaria de solicitar meu orçamento gratuito!">
+                  Ganhar agora!
+                </a>
+              </button>
+              <div class="flex flex-col justify-between font-semibold text-base 2xl:text-[18px]">
+                <p>Preencha o email e ganhe um orçamento!</p>
               </div>
             </div>
 
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
+            <dvi class="or flex justify-between items-center h-4">
+              ou
+            </dvi>
+
+            <a href="https://api.whatsapp.com/send?phone=+5579998284374&text=Oi! Gostaria de solicitar um orçamento!"
+              class="button !bg-[#51EC6C]">
+              <button class="flex gap-4">
+                <div>
+                  <img src="./assets/icons/wpp.svg" alt="">
+                </div>
+                Falar por Whatsapp
+              </button>
+            </a>
+          </form>
         </div>
-      </section>
+        <!-- <div class="text">
+          <h2 class="title">Sua marca merece destaque</h2>
+          <p>
+            Especialistas em mídia externa e comunicação visual, podemos ajudar a aumentar o faturamento da sua empresa!
+          </p>
+          <a class="button" href="#">Pegar meu orçamento gratuito!</a>
+        </div> -->
+      </div>
+    </section>
 
-      <div class="divider-2"></div>
+    <div class="divider-1"></div>
 
-      <!-- CONTACT -->
-      <section class="section" id="contact">
-        <div class="container grid">
-          <div class="text">
-            <h2 class="title">Entre em contato com a gente!</h2>
-            <p>
-              Entre em contato com a Beautysalon, queremos tirar suas dúvidas,
-              ouvir suas críticas e sugestões.
-            </p>
-            <a
-              href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário"
-              class="button"
-              target="_blank"
-              ><i class="icon-whatsapp"></i> Entrar em contato</a
-            >
-          </div>
-
-          <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i> 11 99845-6754</li>
-              <li><i class="icon-map-pin"></i> R. Amauri Souza, 346</li>
-              <li><i class="icon-mail"></i> contato@beautysalon.com</li>
-            </ul>
-          </div>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container_style grid">
+        <div class="image">
+          <img src="./assets/fotos/central.webp"
+            alt="Equipe da Central Comunicação,todos homens, sorrindo e acenando para foto. No fundo uma Combi Branca velha e com adesivos da Central Comunicação." />
         </div>
-      </section>
-
-      <div class="divider-1"></div>
-    </main>
-
-    <footer class="section">
-      <div class="container grid">
-        <div class="brand">
-          <a class="logo logo-alt" href="#home">beauty<span>salon</span>.</a>
-          <p>©2021 Beautysalon.</p>
-          <p>Todos os direitos reservados.</p>
-        </div>
-
-        <div class="social grid">
-          <a href="https://instagram.com" target="_blank">
-            <i class="icon-instagram"></i>
-          </a>
-          <a href="https://facebook.com" target="_blank">
-            <i class="icon-facebook"></i
-          ></a>
-          <a href="https://youtube.com" target="_blank"
-            ><i class="icon-youtube"></i
-          ></a>
+        <div class="text">
+          <h2 class="title">Sobre nós</h2>
+          <p>
+            Atuamos no mercado sergipano a mais de 18 anos. Buscamos os melhores pontos da cidade os nossos clientes com
+            máximo de exposição das suas marcas e propagandas.
+          </p>
+          <br />
+          <p>
+            Sempre em lugares com grande fluxo de pessoas, nossos
+            engenhos publicitários nunca competem com outros painéis. Prezamos por uma exposição exclusiva, gerando
+            assim uma maior visibilidade para nossos clientes.
+          </p>
+          <br />
+          <p>
+            Atendendo as exigências da EMSUB, nossas placas são projetadas por engenheiros, arquitetos e localizadas em
+            canteiros públicos ou propriedades particulares.
+          </p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+    <div class="divider-2"></div>
 
-    <!-- swiper -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container_style grid">
+        <header>
+          <h2 class="title">Serviços</h2>
+          <p class="subtitle">
+            Com mais de 10 anos no mercado, a <strong>Central Comunicação</strong> já
+            conquistou clientes de inúmeros estados com seus serviços
+            exclusivos e de total qualidade
+          </p>
+        </header>
+        <div class="cards grid">
+          <div class="card flex flex-col items-center gap-4">
+            <img class="h-24 w-24" src="./assets/icons/paint.svg" alt="">
+            <h3 class="title">Comunicação Visual</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              distinctio neque blanditiis, dolorem aperiam nulla explicabo
+              asperiores
+            </p>
+          </div>
+          <div class="card flex flex-col items-center gap-4 py-2">
+            <img class="h-40 w-40" src="./assets/fotos/central_outdoor.webp" alt="">
+            <h3 class="title">Painéis</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              distinctio neque blanditiis, dolorem aperiam nulla explicabo
+              asperiores
+            </p>
+          </div>
+          <div class="card flex flex-col items-center gap-4">
+            <img class="h-24 w-24" src="./assets/icons/box_1.svg" alt="">
+            <h3 class="title">Projetos Personalizados</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              distinctio neque blanditiis, dolorem aperiam nulla explicabo
+              asperiores
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- scrollreveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <div class="divider-1"></div>
 
-    <!-- main.js -->
-    <script src="main.js"></script>
-  </body>
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container_style">
+        <header>
+          <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+        </header>
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque
+                </p>
+                <cite>
+                  <img src="assets/fotos/10.jpeg" alt="Foto de Wanessa Souza" />
+                  Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque
+                </p>
+                <cite>
+                  <img src="assets/fotos/56.jpeg" alt="Foto de Franciele Venega" />
+                  Franciele Venega
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque
+                </p>
+                <cite>
+                  <img src="assets/fotos/26.jpeg" alt="Fotos de Valeska Fabris" />
+                  Valeska Fabris
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2"></div>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container_style grid">
+        <div class="text">
+          <h2 class="title">Entre em contato com a gente!</h2>
+          <p>
+            Entre em contato com a Central Comunicação, queremos tirar suas dúvidas,
+            ouvir suas críticas e sugestões.
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=+5579998284374&text=Oi! Gostaria de solicitar um orçamento!"
+            class="button !bg-[#51EC6C]" target="_blank"><i class="icon-whatsapp"></i> Entrar em contato</a>
+        </div>
+
+        <div class="links">
+          <ul class="grid">
+            <li><i class="icon-phone"></i> 79 9 9828-4374</li>
+            <li><i class="icon-map-pin"></i>Av. Augusto Franco, 2025, Pereira Lobo. Aracaju, Sergipe</li>
+            <li><i class="icon-mail"></i> contato@centralcomunicacao.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-1"></div>
+  </main>
+
+  <footer class="section">
+    <div class="container_style grid">
+      <div class="brand">
+        <a class="logo logo-alt" href="#home">Central<br /><span>Comunicação</span></a>
+        <!-- <a class="logo" href="#">
+          <img src="./assets/icons/logo-white.png" alt="">
+        </a> -->
+        <p>©2021 Central Comunicação.</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+
+      <div class="social grid">
+        <a href="https://www.instagram.com/centralpublicidade/" target="_blank">
+          <i class="icon-instagram"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <i class="icon-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+  <!-- swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- scrollreveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- main.js -->
+  <script src="main.js"></script>
+</body>
+
 </html>
